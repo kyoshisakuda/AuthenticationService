@@ -29,7 +29,7 @@ public class UserServiceImpl implements UserService {
         ).collect(Collectors.toSet());
 
         USERS = Stream.of(
-                new User("ksakuda", encoder.encode("perrito"), ROLE_USER),
+                new User("ksakuda", encoder.encode("secret"), ROLE_USER),
                 new User("admin", encoder.encode("root"), ROLE_ADMIN)
         ).collect(Collectors.toSet());
     }
